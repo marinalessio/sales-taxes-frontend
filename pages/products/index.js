@@ -17,7 +17,7 @@ export default class Products extends React.Component {
 
     static async getInitialProps() {
       
-      const res = await fetch('http://localhost:3001/products');
+      const res = await fetch('https://pg9zsdx373.execute-api.us-east-2.amazonaws.com/latest/products');
       const json = await res.json();
       return { products: json };
 
