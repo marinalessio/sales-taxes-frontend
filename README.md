@@ -1,5 +1,7 @@
 # sales-taxes-frontend
 
+[![Build Status](https://travis-ci.org/github/marinalessio/sales-taxes-frontend.svg?branch=master)](https://travis-ci.org/github/marinalessio/sales-taxes-frontend)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
