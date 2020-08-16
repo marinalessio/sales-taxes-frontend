@@ -11,10 +11,10 @@ export default function Home() {
       </Head>
 
       <main>
-        Sales taxes problem
+        <h1>Sales taxes problem</h1>
         <Link href="/products">
           <button>
-            Enter
+            View
           </button>
           </Link>
       </main>

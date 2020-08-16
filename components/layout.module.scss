@@ -1,5 +1,31 @@
-.container {
-    max-width: 36rem;
-    padding: 0 1rem;
-    margin: 3rem auto 6rem;
-  }
+.layoutContainer {
+    margin-top: 150px;
+}
+
+.header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    background-color: white;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        align-items: center;
+
+        li {
+            min-width: 300px;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}

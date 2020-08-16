@@ -44,9 +44,9 @@ export default class Products extends React.Component {
             <title>Create your order</title>
           </Head>
     
-          <main>
+          <main className="list-container">
             <Layout>
-              <div className="question">What do you need?</div>
+              <div className="question">What do you need? Please select some products and create your order.</div>
               <div className="list">
                 {this.props.products.map((product, key) => (
                   <div key={key} onClick={() => this.selectProduct(product.id)} className={(this.state.productsSelected.indexOf(product.id) > -1)? 'selected': ''}>
@@ -60,30 +60,10 @@ export default class Products extends React.Component {
                   Calculate total
                 </button>
                 </Link>
-
-              <Link href="/products/new">
-                <button>
-                  Create new product
-                </button>
-              </Link>
               
             </Layout>
           </main>
-    
-          <style jsx>{`
-            .container {
-              min-height: 100vh;
-              padding: 0 0.5rem;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            }
 
-            .selected {
-              background-color: yellow;
-            }
-          `}</style>
         </div>
       )
     }

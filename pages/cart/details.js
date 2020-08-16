@@ -37,35 +37,23 @@ export default class Cart extends React.Component {
             <title>Details order</title>
           </Head>
     
-          <main>
+          <main className="list-container">
             <Layout>
               <div className="question">Order details</div>
-              <div className="bill">
+              <div className="list">
                 {this.state.products.map((product, key) => (
                   <div key={key}>
                     {product.quantity} {product.name} {product.priceTaxed}
                   </div>
                 ))}
-                <br />
-                <br />
-                Sales Taxes: {this.state.salesTaxes}
-                <br />
-                Total: {this.state.total}
+              </div>
+              <div className="details">
+                <div>Sales Taxes: {this.state.salesTaxes}</div>
+                <div>Total: {this.state.total}</div>
 
               </div>
             </Layout>
           </main>
-    
-          <style jsx>{`
-            .container {
-              min-height: 100vh;
-              padding: 0 0.5rem;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            }
-          `}</style>
         </div>
       )
     }

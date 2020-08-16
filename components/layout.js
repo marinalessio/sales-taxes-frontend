@@ -4,14 +4,16 @@ import styles from './layout.module.scss';
 
 export default function Layout({ children }) {
     return (
-        <div>
-            <Head>
-                <title>Sales taxes problem</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
-            <div>COMMON</div>
-            <div className={styles.container}>{children}</div>
+        <div className={styles.layoutContainer}>
+            <header className={styles.header}>
+                <ul>
+                    <li><Link href="/products">Products</Link></li>
+                    <li>
+                        <Link href="/products/new">New product</Link>
+                    </li>
+                </ul>
+            </header>
+            <div>{children}</div>
         </div>
     )
 }

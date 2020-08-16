@@ -94,13 +94,13 @@ export default class NewProduct extends React.Component {
       return (
         <div className="container">
           <Head>
-            <title>Create new product</title>
+            <title>Create product</title>
           </Head>
     
           <main>
             <Layout>
                
-                <form onSubmit={this.submitForm}>
+                <form onSubmit={this.submitForm} className="new-product-form">
 
                   <div className="form-group">
                     <label htmlFor="name">Name</label>
