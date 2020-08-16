@@ -37,9 +37,8 @@ export default class NewProduct extends React.Component {
           excepted: this.state.excepted
         })
       };
-      
       let res = await fetch('http://localhost:3001/products', requestOptions);
-      if (res.status == 200) {
+      if (res.ok) {
         alert("Product created");
       } else {
         alert("Error");
