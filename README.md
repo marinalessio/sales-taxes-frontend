@@ -2,6 +2,12 @@
 
 [![Build Status](https://travis-ci.org/marinalessio/sales-taxes-frontend.svg?branch=master)](https://travis-ci.org/github/marinalessio/sales-taxes-frontend)
 
+## Local installation
+
+npm install
+
+npm run dev
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
