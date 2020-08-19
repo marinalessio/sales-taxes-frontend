@@ -37,7 +37,7 @@ export default class NewProduct extends React.Component {
           excepted: this.state.excepted
         })
       };
-      let res = await fetch('https://cwl4ojiqki.execute-api.us-east-2.amazonaws.com/latest/products', requestOptions);
+      let res = await fetch('https://tygfe412lb.execute-api.us-east-2.amazonaws.com/latest/products', requestOptions);
       if (res.ok) {
         alert("Product created");
       } else {

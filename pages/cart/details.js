@@ -24,7 +24,7 @@ export default class Cart extends React.Component {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(products.split("|"))
           };
-          let res = await fetch('https://cwl4ojiqki.execute-api.us-east-2.amazonaws.com/latest/bill', requestOptions);
+          let res = await fetch('https://tygfe412lb.execute-api.us-east-2.amazonaws.com/latest/bill', requestOptions);
           let json = await res.json();
           this.setState({ products: json.products, salesTaxes: json.salesTaxes, total: json.total });
         }
