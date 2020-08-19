@@ -24,7 +24,7 @@ export default class Cart extends React.Component {
               headers: { 'Content-Type': 'application/json' },
               body: JSON.stringify(products.split("|"))
           };
-          let res = await fetch('https://pg9zsdx373.execute-api.us-east-2.amazonaws.com/latest/bill', requestOptions);
+          let res = await fetch('https://cwl4ojiqki.execute-api.us-east-2.amazonaws.com/latest/bill', requestOptions);
           let json = await res.json();
           this.setState({ products: json.products, salesTaxes: json.salesTaxes, total: json.total });
         }
@@ -43,7 +43,7 @@ export default class Cart extends React.Component {
               <div className="list">
                 {this.state.products.map((product, key) => (
                   <div key={key}>
-                    {product.quantity} {product.name} {product.priceTaxed}
+                    {product.quantity} <br /><br /> {product.name} <br /><br /> {product.priceTaxed}
                   </div>
                 ))}
               </div>
